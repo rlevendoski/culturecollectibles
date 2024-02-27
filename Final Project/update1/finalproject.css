@@ -1,0 +1,75 @@
+body {
+  height: 3000px;
+  background: linear-gradient(141deg, #02FEE4 0%, #5E57FF 51%, #F23CA6 75%);
+  color:#FFFFFF;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+  }
+header  {
+    color: #FFFFFF;
+    text-align: center;
+    font-family:Verdana, Tahoma, sans-serif;
+    padding: 1em;}
+header a {text-decoration: none;}
+header a:link {color: #4BFF36;}
+header a:visited {color: #5E57FF;}
+header a:hover {color: #E57FF3;}
+h1 {text-align: center;
+    font-size: 1.5em;}
+h2 {color: #FFFFFF; 
+    font-family: Verdana, Tahoma, sans-serif;}
+h3 {font-family: Verdana, Tahoma, sans-serif;}
+nav {padding-top: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    font-size: 1.2em;
+    text-align: center;}
+nav a {text-decoration: none;}
+nav a:link {color: #4BFF36;}
+nav a:visited {color: #5e57ff;}
+nav a:hover {color: #e57ff3;}
+nav ul {list-style-type: none; 
+  padding-left: 1em;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 0;
+  font-weight: bold;}
+nav li {padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  border-bottom: 1px solid;}
+p {margin-left: 80px;
+  margin-right: 80px;}
+.fit-picture {max-width: 60%; max-height: 60%;}
+#mobile {display: inline;}
+#desktop {display: none;}
+footer {text-align: center;
+  font-size: .70em;
+  padding: 1em;}
+
+@media (min-width: 800px) {
+    h1 {letter-spacing: .25em;
+            font-size: 2em;
+            text-align: center;}
+    nav ul {display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            padding: 1em;
+            padding-right: 1em;
+            margin: 0;
+            list-style-type: none;
+            padding-left: 0; }
+    nav li {border-bottom: none;
+            width: 12em; 
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-left: 1em;
+            padding-right: 1em;}
+    #mobile {display: none;}
+    #desktop {display: inline;}
+@media (min-width: 1024px) {
+    nav ul {padding-right: 10%;
+            padding-left: 10%;}}
+    }
