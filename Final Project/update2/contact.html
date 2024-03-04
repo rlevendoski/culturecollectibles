@@ -3,11 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Display, clean, and repair your favorite collectibles with Culture Collectibles">
         <link rel="stylesheet" href="finalproject.css">
         <title>Culture Collectibles · Contact</title>
+        <script>
+            function validatePhone() {
+            var phoneNumber = document.getElementById("myPhone").value;
+            var phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+            if (!phoneRegex.test(phoneNumber)) {
+                alert("Please enter phone number in XXX-XXX-XXXX format only");
+            return false;
+            } // end function validatePhone
+        }
+        </script>
     </head>
     <body>
-        <header><h1><a href="index.html">Culture Collectibles</a></h1></header>
+        <header><a href="index.html"><img src="cultcollectibles.png" alt="Stylized font stating Culture Collectibles"></img></a></header>
 
     <nav>
         <ul>
@@ -24,14 +35,31 @@
         </ul>
     </nav>
 
-    <main>
+    <main><hr>
         <h2>Contact</h2>
-        <img
-        class="fit-picture"
-        src="construction.png"
-        alt="A white comic action bubble with the text Under Construction">
+        Please feel free to reach out to us with any questions or comments.<br>
+        <p>Required fields are marked with an asterisk*.</p>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php"
+            onsubmit="return validatePhone();">
+            <label for="Name">*Preferred Name:</label>
+                <input type="text" name="Name" id="Name" required>
+            <label for="Email">*E-mail:</label>
+                <input type="text" name="Email" id="Email" required>
+            <label for="Phone">Phone:</label>
+                <input type="text" name="myPhone" id="myPhone">
+            <label for="prefCon">*Preferrred Method of Contact:</label>
+                <select id="ConMethod" name="Contact Method" required>
+                        <option value="Email" selected>Email</option>
+                        <option value="Phone">Phone</option>
+                </select>
+            <label for="myComments">*Questions or Comments:</label>
+                <textarea name="Comments" id="Comments" rows="2" cols="20" required></textarea>
+                <input type="submit" value="Submit">
+        </form>
+    
     </main>
-        
+    <br>
+    <a href="index.html"><img src="logo.png" height="50" width="50" alt="A white C overlaying a pink C - the Culture Collectibles logo."></a>       
     <footer>
         Copyright &copy; 2010 Culture Collectibles<br>
         <a href="mailto:raen@levendoski.com">raen@levendoski.com</a>
