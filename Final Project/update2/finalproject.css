@@ -26,7 +26,7 @@ nav a {text-decoration: none;
     display: block;}
 nav a:link {color: #FF9535;}
 nav a:visited {color: #02FEE4;}
-nav a:hover {color: #e57ff3;}
+nav a:hover {color: #F23CA6;}
 nav ul {list-style-type: none;
     margin: 0;}
 nav li {padding: 0.5em;
@@ -88,14 +88,14 @@ form {display:inline-flex;
 input[type="submit"] {grid-column: auto; width: 9em;}
 table {margin: auto;
     border: 1px solid #4BFF36;
-    border-right: 1px solid #4BFF36;
     width: 100%;
     border-collapse: collapse;}
-.center {margin-left: auto;
-    margin-right: auto;}
 td, th {padding: 5px;
     border: 1px #4BFF36;}
-td {text-align: left;}
+table td {text-align: left;
+    border: 1px solid #4BFF36;}
+.center {margin-left: auto;
+    margin-right: auto;}
 tr:nth-of-type(odd){background-color: #5E57FF;}
 #mobile {display: inline;}
 #desktop {display: none;}
