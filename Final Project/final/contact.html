@@ -19,7 +19,7 @@
         </script>
     </head>
     <body>
-        <header><a href="index.html"><img class= "fit-picture" src="cultcollectibles.png" alt="Stylized font stating Culture Collectibles"></img></a></header>
+        <header><a href="index.html"><img class= "fit-picture" src="cultcollectibles.png" alt="Stylized font stating Culture Collectibles"></a></header>
 
         <div class="topnav">
             <a href="index.html" class="active">Home</a>
@@ -50,8 +50,8 @@
 <div id="contact">
     <main><hr>
         <h2>Contact</h2>
-        Please feel free to reach out to us with any questions or comments.<br>
-        <p>Required fields are marked with an asterisk*.</p>
+        <p>Please feel free to reach out to us with any questions or comments.<br>
+        Required fields are marked with an asterisk*.</p>
         <form method="post" action="https://webdevbasics.net/scripts/demo.php"
             onsubmit="return validatePhone();">
             <label for="Name">*Preferred Name:</label>
@@ -59,14 +59,15 @@
             <label for="Email">*E-mail:</label>
                 <input type="text" name="Email" id="Email" required>
             <label for="Phone">Phone:</label>
-                <input type="text" name="myPhone" id="myPhone">
-            <label for="prefCon">*Preferrred Method of Contact:</label>
-                <select id="ConMethod" name="Contact Method" required>
-                        <option value="Email" selected>Email</option>
-                        <option value="Phone">Phone</option>
+                <input type="text" name="Phone" id="Phone">
+            <label for="prefCon">*Preferred Method of Contact:</label>
+                <select name="prefCon" id="prefCon" required>
+                        <option value="">Select One</option>
+                        <option value="optEmail">Email</option>
+                        <option value="optPhone">Phone</option>
                 </select>
             <label for="myComments">*Questions or Comments:</label>
-                <textarea name="Comments" id="Comments" rows="2" cols="20" required></textarea>
+                <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
                 <input type="submit" value="Submit">
         </form>
     
@@ -78,6 +79,6 @@
         Copyright &copy; 2010 Culture Collectibles<br>
         <a href="mailto:raen@levendoski.com">raen@levendoski.com</a>
     </footer>
-    </body>
 </div>
+</body>
 </html>
